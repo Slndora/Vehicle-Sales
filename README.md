@@ -1238,7 +1238,7 @@ Total Sales = COUNTROWS('cleaned_car_prices')
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130509.png)
 
 ## Acknowledgments
-This project uses the vehicle sales dataset provided by [Saad Haroon]. We thank them for their valuable contribution.
+This project uses the vehicle sales dataset provided by MIT from kaggle. We thank them for their valuable contribution.
 
 
 
