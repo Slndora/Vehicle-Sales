@@ -11,9 +11,10 @@ The objective of this project is to analyze a vehicle sales dataset to uncover k
 - [Technologies Used](#technologies-used)
 - [Importing the data](#importing-the-data)
 - [Data Cleaning](#data-cleaning)
-- [Data Manipulation](#data-manipulation)
-- [SQL for Data Insights](#sQL-for-data-insights)
-- [Insights Generated with SQL Queries](#insights-generated-with-sQL-queries)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+- [Univariate Analysis](#univariate-analysis)
+- [Bivariate analysis](#bivariate-analysis)
+- [Multi variate analysis](#multi-variate-analysis)
 - [Measures in Power BI](#measures-in-power-bI)
 - [Dashboard](#dashboard)
 - [Acknowledgments](#acknowledgments)
@@ -28,37 +29,21 @@ contains additional details about the condition of the cars, state of sale, and 
 Key columns in the dataset:
 
 1) Year: The year the car was manufactured.
-
 2) Make: The brand of the car.
-
 3) Model: The specific model of the car.
-
 4) Trim: A variant or version of the model with different features.
-
 5) Body: The type or category of the car (e.g., SUV, Sedan).
-
 6) Transmission: Type of transmission (automatic or manual).
-
 7) VIN: Vehicle Identification Number (unique identifier for each car).
-
 8) State: The state where the car is sold.
-
 9) Condition: The condition of the car when sold (e.g., new, used).
-
 10) Odometer: Number of miles the car has been driven.
-
 11) Color: The exterior color of the car.
-
 12) Interior: The interior color/material of the car.
-
 13) Seller: The seller of the car.
-
 14) MMR: Manheim Market Report value (provides a price benchmark for the vehicle).
-
 15) Selling Price: The actual selling price of the car.
-
 16) Sale Date: The date the car was sold.
-
 
 ## Analysis Goals
 Here are key analysis goals for your vehicle sales dataset:
@@ -189,7 +174,7 @@ df.columns = df.columns.str.strip().str.lower()
 
 ```
 
-### Data cleaning
+## Data cleaning
 
 ```
 plt.figure(figsize=(14, 6))
@@ -600,8 +585,8 @@ Price_diff	515002.0	-164.891317	1592.862485	-31200.0	-800.00	-50.0	625.00	23050.
 df.to_csv('cleaned_car_prices.csv', index=False)
 
 ```
-## EXPLORATORY DATA ANALYSIS
-### Univariant Analysis
+## Exploratory Data Analysis
+## Univariate Analysis
 1) Make
 ```
 plt.figure(figsize=(24,8))
@@ -1076,7 +1061,7 @@ plt.show()
 ```
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121235.png)
 
-## Multi variant analysis
+## Multi variate analysis
 
 1) Top Models by make
 ```
@@ -1234,11 +1219,26 @@ plt.show()
 ```
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20122006.png)
 
+## Measures in Power BI
+I successfully imported data from a relational database using MySQL Workbench into Power BI. Following the import, I developed several measures to enhance data analysis and visualization capabilities. These measures were designed to provide key insights and facilitate informed decision-making based on the underlying data.
+The integration process involved establishing relationships between various data tables to ensure accurate data modeling. I utilized DAX (Data Analysis Expressions) to create custom calculations, enabling dynamic reporting and in-depth analysis.The resulting Power BI dashboards offer a comprehensive view of the data, empowering with actionable insights and fostering a data-driven culture within the organization.
 
+```
+Average Odometer Reading = AVERAGE(cleaned_car_prices[odometer])
+Average Selling price = AVERAGE(cleaned_car_prices[sellingprice])
+Total Revenue = SUM(cleaned_car_prices[sellingprice])
+Total Sales = COUNTROWS('cleaned_car_prices')
+```
 
+## Dashboard
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130433.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130442.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130452.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130501.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130509.png)
 
-
-
+## Acknowledgments
+This project uses the vehicle sales dataset provided by [Saad Haroon]. We thank them for their valuable contribution.
 
 
 
