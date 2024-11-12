@@ -1220,7 +1220,7 @@ plt.show()
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20122006.png)
 
 ## Measures in Power BI
-I successfully imported data from a relational database using MySQL Workbench into Power BI. Following the import, I developed several measures to enhance data analysis and visualization capabilities. These measures were designed to provide key insights and facilitate informed decision-making based on the underlying data.
+I successfully imported data from my device to Power BI. Following the import, I developed several measures to enhance data analysis and visualization capabilities. These measures were designed to provide key insights and facilitate informed decision-making based on the underlying data.
 The integration process involved establishing relationships between various data tables to ensure accurate data modeling. I utilized DAX (Data Analysis Expressions) to create custom calculations, enabling dynamic reporting and in-depth analysis.The resulting Power BI dashboards offer a comprehensive view of the data, empowering with actionable insights and fostering a data-driven culture within the organization.
 
 ```
