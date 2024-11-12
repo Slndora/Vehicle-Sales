@@ -1,6 +1,6 @@
 # Vehicle-Sales
 ## Vehicle Sales Insights:A Comprehensive Analysis of Sales, Pricing, and Trends
-![alt text]
+![alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/7317651.jpg)
 ## Objective
 The objective of this project is to analyze a vehicle sales dataset to uncover key trends and factors influencing car prices and demand. By examining variables like make, model, condition, odometer, and sales data, the project aims to provide insights that help optimize pricing, inventory, and market strategies in automotive sales.
 ## Table of Contents
@@ -60,9 +60,6 @@ Key columns in the dataset:
 16) Sale Date: The date the car was sold.
 
 
-![Alt text]
-
-
 ## Analysis Goals
 Here are key analysis goals for your vehicle sales dataset:
 
@@ -110,7 +107,7 @@ year	make	model	trim	body	transmission	vin	state	condition	odometer	color	interi
 3	2015	Volvo	S60	T5	Sedan	automatic	yv1612tb4f1310987	ca	41.0	14282.0	white	black	volvo na rep/world omni	27500.0	27750.0	Thu Jan 29 2015 04:30:00 GMT-0800 (PST)
 4	2014	BMW	6 Series Gran Coupe	650i	Sedan	automatic	wba6b2c57ed129731	ca	43.0	2641.0	gray	black	financial services remarketing (lease)	66000.0	67000.0	Thu Dec 18 2014 12:30:00 GMT-0800 (PST)
 ```
-![Alt text]
+
 
 ### Data overview
 ```
@@ -202,7 +199,7 @@ plt.xticks(rotation=30)
 
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120636.png)
 
 ```
 null_percentage= (df.isnull().sum()/df.shape[0])*100
@@ -217,7 +214,7 @@ plt.grid(axis='y')
 plt.gcf().patch.set_facecolor('lightgreen')
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120726.png)
 
 ```
 fill_methods = {
@@ -416,7 +413,7 @@ for i, col in enumerate(col_to_plot):
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120739.png)
 
 ```
 def remove_outliers(df, col):
@@ -553,7 +550,7 @@ Price_diff        0.0
 dtype: float64
 ```
 ```
-f.dtypes
+df.types
 year                            int64
 make                           object
 model                          object
@@ -615,7 +612,7 @@ plt.gcf().patch.set_facecolor('lightgreen')
 plt.show()
 
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120753.png)
 
 2) State
 ```
@@ -626,7 +623,7 @@ plt.xticks(rotation=70)
 plt.gcf().patch.set_facecolor('lightgreen')
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120816.png)
 
 3) condition
 ```
@@ -637,7 +634,7 @@ plt.xticks(rotation=70)
 plt.gcf().patch.set_facecolor('lightgreen')
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120824.png)
 
 4) Distribution of Selling Price
 ```
@@ -650,7 +647,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.5)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120831.png)
 
 5) Distribution of Odometer
 ```
@@ -663,7 +660,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.5)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120841.png)
 
 6) model 
 ```
@@ -677,7 +674,7 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120848.png)
 
 7) trim 
 ```
@@ -691,7 +688,7 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120855.png)
 
 8) body types
 ```
@@ -705,7 +702,7 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120901.png)
 
 9) color
 ```
@@ -729,7 +726,7 @@ plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120910.png)
 
 10) sales trend 
 ```
@@ -754,7 +751,7 @@ axes[2].set_xlabel('Day of Week')
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120918.png)
 
 11) Transmissiom 
 ```
@@ -779,7 +776,7 @@ axes[1].set_ylabel('Count', fontsize=14)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120925.png)
 
 12) State abbreviations
 ```
@@ -801,7 +798,7 @@ fig = px.choropleth(state_counts,locations='state',locationmode='USA-states',col
 fig.show()
 ```
 
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120933.png)
 
 ## Bivariate analysis
 
@@ -832,7 +829,7 @@ plt.tight_layout()
 plt.show()
 
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120939.png)
 
 2) Selling Price vs MMR
 ```
@@ -843,7 +840,7 @@ plt.xlabel('MMR')
 plt.ylabel('Selling Price')
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120946.png)
 
 3) Average Selling Price by Condition
 ```
@@ -876,7 +873,8 @@ plt.grid(True, linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20120958.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121014.png)
 
 4) Year vs Odometer
 ```
@@ -888,7 +886,7 @@ plt.ylabel('Odometer (Miles)', fontsize=12)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121023.png)
 
 5) Average Condition of Sold Cars Over the Years
 ```
@@ -904,7 +902,7 @@ plt.grid(True, linestyle='-', alpha=0.4)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121031.png)
 
 6) Distribution of Car Year and Total Revenue
 ```
@@ -925,7 +923,7 @@ fig.update_layout(
 
 fig.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121038.png)
 
 7) Average Selling Price categories wise
 ```
@@ -962,7 +960,9 @@ for i, category in enumerate(ordered_categories):
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121111.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121139.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121148.png)
 
 8) Selling Prices by Category
 ```
@@ -978,7 +978,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121200.png)
 
 9) Percentage of Sales by State
 ```
@@ -1006,7 +1006,7 @@ plt.title('Percentage of Sales by State (Top 5 + Other)', fontsize=20, weight='b
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121207.png)
 
 10) Brand by Models Count
 ```
@@ -1031,7 +1031,7 @@ plt.axis('equal')
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121217.png)
 
 11) Top sellers 
 ```
@@ -1047,7 +1047,6 @@ seller	sellingprice
 4	santander consumer	120513815.0
 
 ```
-![Alt text]
 
 12) Top 5 Sellers by Total Selling Price'
 ```
@@ -1060,7 +1059,7 @@ plt.grid(axis='x', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121225.png)
 
 13) Average Selling Price by Body Type
 ```
@@ -1075,7 +1074,7 @@ plt.xticks(rotation=90, ha='right', fontsize=12)
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121235.png)
 
 ## Multi variant analysis
 
@@ -1104,7 +1103,9 @@ for i, make in enumerate(combined_sales['make'].unique(), start=1):
 plt.tight_layout(pad=2)
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121246.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121253.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121301.png)
 
 2) Make vs. Transmission vs. Selling Price by Condition
 ```
@@ -1124,7 +1125,8 @@ g.add_legend(title='Condition Group', loc='upper right')
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121314.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121335.png)
 
 3) Top 10 Makes vs. Transmission vs. Total Selling Price
 ```
@@ -1142,7 +1144,7 @@ plt.legend(title='Transmission')
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20122524.png)
 
 4) Top 5 Car Soldout count
 ```
@@ -1160,7 +1162,7 @@ plt.yticks(fontsize=14)
 plt.legend(title='Condition', fontsize=12)
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121404.png)
 
 5) Year vs Condition vs Selling Price
 ```
@@ -1180,7 +1182,7 @@ cbar.set_label('Selling Price')
 plt.tight_layout()
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121909.png)
 
 6) Condition Group vs. Odometer vs. Selling Price
 ```
@@ -1198,7 +1200,7 @@ cbar = fig.colorbar(scatter, ax=ax, pad=0.1)
 cbar.set_label('Selling Price')
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121920.png)
 
 7) Year vs. Odometer vs. Selling Price
 ```
@@ -1216,7 +1218,7 @@ cbar = plt.colorbar(sc)
 cbar.set_label('Selling Price')
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20121957.png)
 
 8) Correlation Heatmap of Key Variables
 ```
@@ -1230,7 +1232,7 @@ sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', linewidths=0.5)
 plt.title('Correlation Heatmap of Key Variables')
 plt.show()
 ```
-![Alt text]
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/4e97d75bf6bb9405a255f1309f0aa9e02c3550a7/Screenshot%202024-11-12%20122006.png)
 
 
 
