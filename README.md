@@ -1233,7 +1233,7 @@ Total Sales = COUNTROWS('cleaned_car_prices')
 ## Dashboard
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130433.png)
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130442.png)
-![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130452.png)
+![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/bc683abfff6f2f4b1f5612ce3d42aebe965299f1/Screenshot%202024-11-13%20134352.png)
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130501.png)
 ![Alt text](https://github.com/Slndora/Vehicle-Sales/blob/b466535495165eff8a8186b4556eef0fb4f0220d/Screenshot%202024-11-12%20130509.png)
 
