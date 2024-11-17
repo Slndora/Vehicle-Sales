@@ -61,7 +61,7 @@ Here are key analysis goals for your vehicle sales dataset:
 These goals aim to provide actionable insights for pricing strategies, inventory management, and understanding market dynamics within the automotive sales industry.
 
 ## Methodology
-- Data Cleaning & Preparation: Ensure data integrity and consistency across all tables.
+- Data Cleaning & Preparation: Ensure data integrity and consistency.
 - Descriptive Analysis: Generate summary statistics and visualizations to identify trends.
 - Inferential Analysis: Apply statistical methods to test hypotheses and draw conclusions.
 - Data Visualization: Utilize tools like Power BI to create interactive dashboards.
